@@ -1,0 +1,38 @@
+.hero-banner {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 12px;
+  /* padding: 40px 20px; */
+}
+
+.overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 20px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.hero-buttons button {
+  background: #e50914;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  margin-right: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

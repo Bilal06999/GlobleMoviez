@@ -1,0 +1,17 @@
+.row {
+  margin: 24px 0;
+}
+
+.row-title {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0 0 12px 16px;
+}
+
+.row-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  /* padding: 0 16px; */
+  justify-content: flex-start;
+}

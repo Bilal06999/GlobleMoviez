@@ -1,0 +1,137 @@
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    /* box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4); */
+    z-index: 99;
+}
+
+.nav-items {
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* left: 0; */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 8px 0; */
+    /* box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4); */
+    z-index: 99;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: flex-start;
+    align-items: center;
+    color: #aaa;
+    font-size: 0.75rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    text-decoration: none;
+text-decoration-line: none;
+}
+
+.nav-item .icon {
+    font-size: 1.4rem;
+    background: transparent;
+    border-radius: 50%;
+    padding: 8px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.nav-item.active .icon {
+    background: #e50914;
+    color: #fff;
+    transform: translateY(-12px) scale(1.1);
+    box-shadow: 0 4px 12px rgba(229, 9, 20, 0.4);
+}
+
+.nav-item .label {
+    margin-top: 0;
+}
+
+.nav-item.active .label {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .bottom-nav {
+        top: 0;
+        bottom: unset;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 40px;
+        gap: 40px;
+        /* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2); */
+    }
+
+    .nav-items {
+        background: #111;
+        width: fit-content;
+        display: flex;
+        justify-content: unset;
+        padding: 8px 0;
+        gap: 40px;
+        /* box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.4); */
+    }
+
+    .nav-item {
+        flex-direction: row;
+        gap: 8px;
+        font-size: 1rem;
+    }
+
+    .nav-item .icon {
+        display: none;
+        font-size: 1.2rem;
+        padding: 6px;
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .nav-item.active .icon {
+        transform: none;
+        background: none;
+        color: #e50914;
+        box-shadow: none;
+    }
+
+    .nav-item.active .label {
+        color: #e50914;
+        font-weight: bold;
+    }
+}
+
+.label {
+    display: none;
+}
+
+.logo {
+    display: none;
+    color: red;
+    text-align: center;
+    text-wrap: nowrap;
+    padding: 4px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .label {
+        display: inline;
+
+    }
+
+    .logo {
+        display: inline;
+    }
+}
